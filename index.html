@@ -13,6 +13,10 @@
     ">
     <script>
       console.log("Sigo sin entender Github");
+      function colorTitulo(){
+        console.log("Pulso el botón de Generation");
+        document.getElementById("generation").style.color = "blue";
+      }
     </script>
 
 </head>
@@ -60,10 +64,12 @@
       <div class="container">
         <div class="row">
             <div>
-                <h1>Estar en Generation es...</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe non maiores officia impedit qui laboriosam consequatur nihil tenetur? Quia similique vitae delectus quaerat ipsam dolorem reiciendis maxime consequuntur velit esse!</p>
-                <p><a href="http://mexico.generation.org" target="_blank" class="btn btn-success"><i class="fa-duotone fa-helicopter"></i>
-                    Visita Generation</p></a>
+                <h1>Estar en <span id="generation">Generation</span> es...</h1>
+                <p>Madre mía, github si está dificil eh!</p>
+                <p onclick="colorTitulo()">
+                <a href="http://mexico.generation.org" target="_blank" class="btn btn-success">
+                    Visita Generation</a>
+                </p>
             </div>
         </div>
       </div>

@@ -95,3 +95,32 @@ function factorial(num){
 }
 
 console.log("Factorial de 4 = " + factorial(4));
+
+
+//++++++++++++Rest parameters++++++++++++++
+
+//(parameters) => operation;
+// (param1, param2) =>    
+
+//return data
+//};
+
+//function sum(a, b, ...resto){
+    //let suma = a+b;
+    //resto.forEach(element => { //Función flecha ¡array.forEach( *aqui va la función*  )!
+        //suma= suma + element; es la misma función pero mas larga
+        //suma+= element;
+        
+    //});
+    //return suma;
+//}
+
+//console.log("El resultado de sumar varios números es: " + sum(2,3,5,7,3));
+
+ function sum( a, b, ...resto){
+        let suma = a+b;
+    resto.forEach( dato => {suma+=dato;});
+    return suma;
+ }
+
+console.log("El resultado de sumar varios números es: " + sum(2,3,5,1));

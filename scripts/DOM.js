@@ -4,6 +4,8 @@ console.log("Sesión JS06 DOM");
 //encontrarPorTagName();
 //encontrarPorClase();
 encontrarPorSelector();
+crearElemento();
+cambiarEstilo();
 
 function encontrarPorID(){
     //Obtenemos el objeto a través de su ID 
@@ -36,8 +38,19 @@ function encontrarPorID(){
     }
 
     function encontrarPorSelector(){
-        const elements = document.querySelectorAll("h3>.color");
+        const elements = document.querySelectorAll("h3>.color");//Acceder a una subclase
         console.log("Elementos encontrados: " + elements.length);
 
         elements[0].innerHTML = "ganas de comprar ";
+    }
+
+    function cambiarEstilo(){
+        const elements = document.querySelectorAll("p>.color");//Elemento paragraph
+        elements[0].style.color="red";//Voy a cambiar a color rojo
+    }
+
+    function crearElemento(){
+        const nuevoElemento = document.createElement("p");
+        nuevoElemento.innerHTML = `Este es un nuevo <strong class="color">párrafo</strong>`;//<p></p> <input value="cositas dentro del input">
+        document.getElementById("titulo").appendChild(nuevoElemento);//El div tiene elemento titulo.
     }

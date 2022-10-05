@@ -1,0 +1,18 @@
+/*especificidad: entre mas específico seas tendrá prioridad*/
+/*Clases: tienen mayor especificidad*/
+
+#titulo-h1 {
+    color: aquamarine;
+}
+
+.estilo-h1 {
+    color:darkorange;
+}
+
+h1 {
+    color: cadetblue !important;/*!important LE GANA A TODAS LAS CLASES*/
+}
+
+h3>.color { /*se aplica siempre y cuando sea hijo (>) */
+    color: blueviolet;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "bootstrap",
+  "version": "1.0.4",
+  "description": "Proyecto de Bootstrap",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riveraeduardo94/bootstrap.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "js",
+    "opp",
+    "axios"
+  ],
+  "author": "Eduardo Rivera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riveraeduardo94/bootstrap/issues"
+  },
+  "homepage": "https://github.com/riveraeduardo94/bootstrap#readme",
+  "dependencies": {
+    "axios": "^1.1.2",
+    "bootstrap": "^5.2.2"
+  }
+}
